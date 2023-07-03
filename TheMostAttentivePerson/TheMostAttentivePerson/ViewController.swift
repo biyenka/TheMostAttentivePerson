@@ -8,20 +8,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          
-        background.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
-        background.contentMode = .scaleToFill
+        background.backgroundColor = UIColor(patternImage: UIImage(named: "img.jpg")!)
+        background.contentMode = .scaleAspectFill
+        background.clipsToBounds = true
         
-        _ = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false) { [self] timer in
-            background.backgroundColor = UIColor(patternImage: UIImage(named: "1_2.jpg")!)
-            background.contentMode = .scaleToFill
-        }
+//        _ = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false) { [self] timer in
+//            background.backgroundColor = UIColor(patternImage: UIImage(named: "1_2.jpg")!)
+//            background.contentMode = .scaleToFill
+//        }
     }
     
     @IBAction func tapFixButton(_ sender: Any) {
-        if background.backgroundColor == UIColor(patternImage: UIImage(named: "1_2.jpg")!) {
-            background.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
-            background.contentMode = .scaleToFill
-        }
+//        if background.backgroundColor == UIColor(patternImage: UIImage(named: "1_2.jpg")!) {
+//            background.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
+//            background.contentMode = .scaleToFill
+//        }
     }
 }
 
