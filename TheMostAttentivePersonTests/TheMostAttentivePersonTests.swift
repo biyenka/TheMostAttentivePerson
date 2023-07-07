@@ -2,7 +2,7 @@
 //  TheMostAttentivePersonTests.swift
 //  TheMostAttentivePersonTests
 //
-//  Created by Kate Bienko on 25/06/2023.
+//  Created by Kate Bienko on 07/07/2023.
 //
 
 import XCTest
